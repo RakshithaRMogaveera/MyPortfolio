@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study</title>
+  <style>
+     * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 256);
+            font-size: 1.02rem;
+        }
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 50px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    section img {
+      width: 150px;
+    }
+
+    .rightsection {
+      font-size: 1rem;
+    }
+
+    .purple {
+      color: #db00db;
+    }
+
+    hr {
+      border: none;
+      height: 1.2px;
+      margin: 20px 80px;
+      background-color: rgb(155, 160, 239);
+    }
+
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      }
+    
+  </style>
+</head>
+
+<body>
+
+ <header>
+        <div class="row box">
+            <nav>
+            <div class="left"> Studies</div>
+
+                <div class="right">
+                    <ul>
+                        <li> <a href="index.html">Home </a></li>
+                        <li> <a href="about.html">About </a></li>
+                        <li> <a href="contact.html">Contact Me </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+  
+
+
+  <section class="firstsection">
+    <div class="leftsection">
+      <img src="mite.jfif" alt="Degree Icon" />
+    </div>
+    <div class="rightsection">
+      • Bachelor of Engineering: Information Science and Engineering.
+      <p>• Mangalore Institute of Technology & Engineering (2022–2026).</p>
+      • CGPA: <span class="purple">8.43</span>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="secondsection">
+    <div class="leftsection">
+      <img src="venkatramana.png" alt="PU Icon" />
+    </div>
+    <div class="rightsection">
+      • Senior Secondary Education (12th).
+      <p>• Sri Venkatramana PU College (2021–2022).</p>
+      • Percentage: <span class="purple">85.16%</span>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="thirdsection">
+    <div class="leftsection">
+      <img src="venky.jfif" alt="SSLC Icon" />
+    </div>
+    <div class="rightsection">
+      • Secondary School (SSLC).
+      <p>• Sri Venkataramana English Medium School (2019–2020).</p>
+      • Percentage: <span class="purple">90.72%</span>
+    </div>
+  </section>
+</body>
+
+</html>

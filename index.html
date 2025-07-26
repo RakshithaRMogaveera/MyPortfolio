@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rakshitha Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@400;600;700& 
+display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 256);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            margin: 60px 0px;
+            background-color: rgb(155, 160, 239);
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 100px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+
+        .leftSection {
+            margin: 30px 0;
+            font-size: 3rem;
+
+        }
+
+        .leftSection .buttons {
+            padding: 23px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #000717;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            float: none;
+        }
+
+        .rightSection img {
+
+            width: 80%;
+            margin: 50px 0;
+            border-radius: 50%;
+            float: none;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(110, 101, 120);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 95vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 200px;
+        }
+
+        .image-top {
+            width: 25px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 20px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 220px;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 90px;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 22px;
+            justify-content: space-evenly;
+            display: flex;
+            width: auto;
+
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 15px 0px;
+            float: none;
+        }
+
+        .box {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="row box">
+            <nav>
+
+                <div class="right">
+                    <ul>
+                        <li> <a href="index.html">Home </a></li>
+                        <li> <a href="about.html">About </a></li>
+                        <li> <a href="studies.html">Studies </a></li>
+                        <li> <a href="contact.html">Contact Me </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple"> Rakshitha</span>
+                <div>This is my</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <input class="btn" type="button" value="RESUME"
+                        onclick="window.open('https://drive.google.com/file/d/19gqQCuJsFwTow4fhjeuboYs0IdNreAQW/view?usp=drive_link')">
+                    <input class="btn" type="button" value="GITHUB"
+                        onclick="window.open('https://github.com/RakshithaRMogaveera')">
+
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="bg.jpg">
+
+            </div>
+        </section>
+        <hr>
+        <div class="row box">
+            <section class="secondSection">
+                <span class="text-gray">These are my </span>
+                <h1> Projects</h1>
+
+                <div class="box">
+                    <div class="vertical">
+                        <img class="image-top" src="alert.png" alt="">
+                        <div class="vertical-title">
+                            Smart-Alerts
+                        </div>
+                        <div class="vertical-desc">
+                            Currently developing an AI-based hazard detection system to identify road obstacles using live video feeds processed on edge
+                            devices. Leveraging YOLOv8 for object detection and integrating real-time alerts with a
+                            Flask dashboard for traffic authorities. Focused on building a scalable, smart city-ready
+                            solution to improve road safety through edge computing and deep learning.
+
+
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="ui.png" alt="">
+                        <div class="vertical-title">
+                            UI-Interface Design
+                        </div>
+                        <div class="vertical-desc">
+                            Designed a clean and user-friendly interface for “Crochy”, a platform that allows crochet
+                            sellers to showcase and sell their handmade products. Inspired by small business needs, the
+                            design includes essential pages such as home, product listings, and user profiles, focused
+                            on ease of use and visual clarity, crafted entirely in Figma using a unique personal design
+                            style.
+
+                        </div>
+                    </div>
+
+
+                    <div class="vertical">
+                        <img class="image-top" src="portfolio.png" alt="">
+                        <div class="vertical-title">
+                            Personal Portfolio Development
+                        </div>
+                        <div class="vertical-desc">
+                            In this Project I have created my own Portfolio Website from the Scratch. Starting from the
+                            index page added few more features with relevent informations. I have used CSS Script inside
+                            the
+                            html and js.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <br><br><br>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Rakshitha Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>
+                        <a href=" https://www.linkedin.com/in/rakshitha-r-mogaveera-a9bb07284">
+                            <img src="linkedin.png" style="width:12%">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/r_mogaveera_/profilecard/?igsh=ajk0dDd6ZWI2c256">
+                            <img src="insta.jpg" style="width:12%">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.rakshitharmogaveera.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Portfolio Website'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
